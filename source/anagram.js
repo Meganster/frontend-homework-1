@@ -8,20 +8,6 @@ const anagram = function (array) {
     // которые являются анаграммами
     let anagramsObject = {};
 
-    /*for (let i = 0; i < array.length; i++) {
-        // sortedWord будет хранить упорядоченный регистронезависимый 
-        // набор букв из которых состоит слово
-        // для этого разбиваем слово на буквы, сортируем и соединяем все обратно
-        let sortedWord = array[i].toLowerCase().split('').sort().join('');
-    
-        // создаст массив для ключа sortedWord 
-        // если он еще не был создан
-        if (anagramsObject[sortedWord] == undefined)
-            anagramsObject[sortedWord] = [];
-
-        // добавляем новое слово в массив
-        anagramsObject[sortedWord].push(array[i]);
-    }*/
     array.forEach(word => {
   	// sortedWord будет хранить упорядоченный регистронезависимый 
         // набор букв из которых состоит слово
