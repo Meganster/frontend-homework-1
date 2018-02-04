@@ -16,7 +16,7 @@ const anagram = function (array) {
     
         // создаст массив для ключа sortedWord 
         // если он еще не был создан
-        if (anagramsObject[sortedWord] == undefined) {
+        if (!anagramsObject[sortedWord]) {
             anagramsObject[sortedWord] = [];
         }
 
